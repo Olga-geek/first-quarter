@@ -8,7 +8,7 @@ while True:
         element = input()
         if element.lower() == "stop":
             break
-        if not element.isdigit():
+        if type(element) != int:
             raise MyException("entered is not a number ")
         some_el.append(element)
     except MyException as err:
